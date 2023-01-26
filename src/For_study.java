@@ -7,8 +7,8 @@ public class For_study {
 
     public static void printIssues(int issueCount) {
         System.out.println(issueCount);
-
     }
+
     public static void main(String[] args) {
         int[] issueByMonths = {4, 6, 7, 9, 2, 5, 12, 3, 7, 10, 6, 7, 1, 8};
         printSeparator();
