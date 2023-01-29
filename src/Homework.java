@@ -1,5 +1,5 @@
 public class Homework {
-    public static void main(String[] args) {Task_1(); Task_2(); Task_3();
+    public static void main(String[] args) {Task_1(); Task_2(); Task_3(); Add_Task();
 
     }
 
@@ -26,21 +26,33 @@ public class Homework {
 
     }
 
-    public static void calculateDay(int deliveryDistance, int numberDay) {
+//    public static void calculateDay(int deliveryDistance, int numberDay) {
+//
+//        if (deliveryDistance <= 20){
+//            System.out.println("We need " + numberDay + " delivery days");
+//        }
+//        else if (deliveryDistance > 20 && deliveryDistance <= 60){
+//            System.out.println("We need " + (numberDay + 1) + " delivery days");
+//        }
+//        else if (deliveryDistance > 60 && deliveryDistance <= 100){
+//            System.out.println("We need " + (numberDay + 2) + " delivery days");
+//        }
+//        else{
+//            System.out.println("we can not delivery");
+//        }
 
-        if (deliveryDistance <= 20){
-            System.out.println("We need " + numberDay + " delivery days");
-        }
-        else if (deliveryDistance > 20 && deliveryDistance <= 60){
-            System.out.println("We need " + (numberDay + 1) + " delivery days");
-        }
-        else if (deliveryDistance > 60 && deliveryDistance <= 100){
-            System.out.println("We need " + (numberDay + 2) + " delivery days");
-        }
-        else{
-            System.out.println("we can not delivery");
-        }
+    public static void printDay(int day) {
+        System.out.println(day);
 
+    }
+    public static void calculateDay1(int deliveryDistance, int numberDay) {
+        if (deliveryDistance > 20) {
+            numberDay += 1;
+        }
+        if (deliveryDistance > 60) {
+            numberDay += 1;
+        }
+        printDay(numberDay);
     }
 
     public static void Task_1() {
@@ -60,11 +72,21 @@ public class Homework {
 
     }
 
-    public static void Task_3() {
-        System.out.println("Task 3");
+//    public static void Task_3() {
+//        System.out.println("Task 3");
+//        int deliveryDistance = 99;
+//        int numberDay = 1;
+//        calculateDay(deliveryDistance, numberDay);
+//
+//        System.out.println();
+
+    }
+
+    public static void Add_Task() {
+        System.out.println("Add Task");
         int deliveryDistance = 99;
         int numberDay = 1;
-        calculateDay(deliveryDistance, numberDay);
+        calculateDay1(deliveryDistance, numberDay);
 
         System.out.println();
 
