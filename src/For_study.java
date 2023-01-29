@@ -26,8 +26,6 @@ public class For_study {
             }
         }
         printSeparator();
-        int total = sum(issueByMonths);
-
-        printIssues(total);
+        printIssues(sum(issueByMonths));
     }
 }
